@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityProfil">
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="483dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:layout_marginLeft="55dp"
+            app:columnCount="3"
+            app:rowCount="2">
+
+
+            <ImageView
+                android:id="@+id/teamid00"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/ic_logo_00" />
+
+            <ImageView
+                android:id="@+id/teamid01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/ic_logo_01" />
+
+            <ImageView
+                android:id="@+id/teamid02"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="2"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/ic_logo_02" />
+
+            <ImageView
+                android:id="@+id/teamid03"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/ic_logo_03" />
+
+            <ImageView
+                android:id="@+id/teamid04"
+                android:layout_width="100dp"
+                android:layout_height="99dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/ic_logo_04" />
+
+            <ImageView
+                android:id="@+id/teamid05"
+                android:layout_width="99dp"
+                android:layout_height="101dp"
+                android:onClick="SetTeamIcon"
+                app:layout_column="2"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/ic_logo_05" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="184dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="110dp"
+
+            android:text="@string/importfromPhone" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/avatarImage"
+            android:onClick="OnsetAvatarButton"
+            android:contentDescription="imv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_logo_00" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/welcomeText"
+            android:textSize="20sp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="447dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/teamNameField"
+                android:layout_width="261dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:autofillHints=""
+                android:inputType="text"
+                android:labelFor="@id/teamNameField"
+
+                android:hint="@string/Entree_nom"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/teamNameTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+
+                android:text="@string/the_name" />
+
+            <EditText
+                android:id="@+id/teamAddressField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:autofillHints=""
+
+                android:inputType="textPostalAddress"
+                android:labelFor="@+id/teamAddressField"
+                android:hint="@string/Entree_address"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/teamAddressTextField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="@string/the_Address"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonGoogle"
+        android:onClick="OnOpenInGoogleMaps"
+        android:layout_width="321dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="0dp"
+        android:text="OPEN IN GOOGLE MAPS"
+
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
+        tools:ignore="SmallSp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

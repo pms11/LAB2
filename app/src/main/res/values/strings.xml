@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Team Manager</string>
+    <string name="Entree_nom">(S’il vous plaît, entrer un nom)</string>
+    <string name="Entree_address">(S’il vous plaît, entrer un zip code) </string>
+    <string name="the_name">nom: </string>
+    <string name="the_Address">Address : </string>
+    <string name="welcomeText">Soccer Team Manager  </string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="importfromPhone">A partir de mon téléphone</string>
+
+</resources>
